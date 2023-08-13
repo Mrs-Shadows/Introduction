@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    
+    <script src="script.js"></script>
+
+    <title>DevLinks</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <!--Tag and IMG of profile-->
+            <div class="profile">
+                <img src="Light-binary_background.png" alt="Profile">
+                
+                <p class="p">&#64;becafelixx</p>
+            </div>    
+            <!--Switch-->
+            <div id="switch" onclick="toggleMode()">
+                <button></button>
+                <span></span>
+            </div>
+        </header>    
+        <!--Special Links-->
+        <main>
+            <ul>
+                <li>
+                    <a href="#" target="_blank" id="a1">LinkedIn</a>
+                </li>
+
+                <li>
+                    <a href="#" target="_blank" id="a2">Git Hub</a>
+                </li>
+
+                <li>
+                    <a href="#" target="_blank" id="a3">Instagram</a>
+                </li>
+
+                <li>
+                    <a href="#" target="_blank" id="a4">Youtube</a>
+                </li>
+            </ul>
+        </main>
+        <!--Icon links-->
+        <div id="social-link">
+            <a href="#" target="_blank">
+                <ion-icon name="logo-github" class="git"></ion-icon>
+            </a>
+            
+            <a href="#" target="_blank">
+                <ion-icon name="logo-linkedin" class="link"></ion-icon>       
+            </a>
+            
+            <a href="#" target="_blank">
+                <ion-icon name="logo-instagram" class="insta"></ion-icon>        
+            </a>
+            
+            <a href="#" target="_blank">
+                <ion-icon name="logo-youtube" class="you"></ion-icon>        
+            </a>    
+        </div>
+
+        <footer>
+            <p>I coded this website with <a href="https:/rocketseat.com.br/" target="_blank">Rocketseat</p>
+        </footer>    
+
+    </div>
+</body>
+</html>
