@@ -47,7 +47,8 @@ body * {
     color: var(--text-color);
     margin: 54.5px auto;
     padding: 10px 24px;
-    width: 320px;
+    width: 100%;
+    max-width: 588px;
 }
 
 /*Profile*/

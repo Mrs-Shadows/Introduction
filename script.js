@@ -11,10 +11,10 @@ function toggleMode() {
     
     const img = document.querySelector(".profile img")
     if (html.classList.contains("light")) {
-        img.setAttribute('src', 'Light-binary_background.png')
+        img.setAttribute('src', 'binary_code.PNG')
         
     } else {
-        img.setAttribute('src', 'binary_code.PNG')   
+        img.setAttribute('src', 'Light-binary_background.png')   
         
     }
 }
