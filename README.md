@@ -1,2 +1,2 @@
-<h1 aling="center">DevLinks</h1>
-<p aling="center">A TreeLink created with Rocketseat Tutorial</p>
+<h1 style="align:center;">DevLinks</h1>
+<p style= "align:center;">A TreeLink created with Rocketseat Tutorial</p>
