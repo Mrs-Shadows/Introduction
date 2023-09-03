@@ -14,7 +14,7 @@ function toggleMode() {
         img.setAttribute('src', 'binary_code.PNG')
         
     } else {
-        img.setAttribute('src', 'Light-binary_background.png')   
+        img.setAttribute('src', 'light-binary.png')   
         
     }
 }

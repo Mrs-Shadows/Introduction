@@ -21,7 +21,7 @@
 
 /*Light Mode*/
 .light {
-    --bg-url: url(light_wall0.PNG);
+    --bg-url: url(Background.png);
     --switch-bg: url(Sun.svg);
     --text-color: black;
     
@@ -48,7 +48,7 @@ body * {
     margin: 54.5px auto;
     padding: 10px 24px;
     width: 100%;
-    max-width: 588px;
+    max-width: 320px;
 }
 
 /*Profile*/
@@ -108,8 +108,8 @@ img {
 
 #switch button:hover {
     background: var(--highlight-color);
-    width: 32px;
-    height: 32px;
+    width: 100px;
+    height: px;
 }
 
 #switch span {
