@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*Dark Mode*/
 :root {
-    --bg-url: url(dark-black-gray-blurred-gradient-shadow-background-abstract-light_532332-1850.avif);
+    --bg-url: url(mobile-bg.jpg);
     --switch-bg: url(MoonStars.svg);
     --text-color: white;
 
@@ -21,7 +22,7 @@
 
 /*Light Mode*/
 .light {
-    --bg-url: url(Background.png);
+    --bg-url: url(light-mobile-bg.jpg);
     --switch-bg: url(Sun.svg);
     --text-color: black;
     
@@ -36,7 +37,7 @@
 }
 
 body {
-    background: var(--bg-url) center / 100% no-repeat;
+    background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
@@ -48,7 +49,7 @@ body * {
     margin: 54.5px auto;
     padding: 10px 24px;
     width: 100%;
-    max-width: 320px;
+    max-width: 588px;
 }
 
 /*Profile*/
@@ -97,6 +98,8 @@ img {
     z-index: 1;
     transform: translate(-10%,-50%);
 
+    cursor: pointer;
+
     background: white var(--switch-bg) no-repeat center;
 }
 
@@ -104,12 +107,6 @@ img {
     right: 0;
     left: initial;
     transform: translateY(-50%);
-}
-
-#switch button:hover {
-    background: var(--highlight-color);
-    width: 100px;
-    height: px;
 }
 
 #switch span {
@@ -124,7 +121,6 @@ img {
     border: 2px solid var(--stroke-color);
     border-radius: 9999px;
 }
-
 
 /* Main links */
 ul {
@@ -209,4 +205,15 @@ footer {
 footer a {
     color: var(--text-color);
     text-decoration: underline;
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(desktop-bg.jpg)
+    }
+
+    .light {
+        --bg-url: url(light-desktop-bg.jpg)
+    }
 }
