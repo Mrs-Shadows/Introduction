@@ -10,9 +10,9 @@
     --switch-bg: url(MoonStars.svg);
     --text-color: white;
 
-    --stroke-color: rgb(0, 255, 136);
-    --surface-color: rgba(0, 255, 149, 0.07);
-    --linkli-color: rgb(0, 255, 136);
+    --stroke-color: rgb(254, 255, 255);
+    --surface-color: rgba(249, 253, 251, 0.07);
+    --linkli-color: rgb(255, 255, 255);
     
     --surface-color-hover: rgba(0, 0, 255, 0.07);
     --stroke-color-hover: rgb(0, 255, 255);
@@ -102,12 +102,12 @@ img {
     cursor: pointer;
 
     background: white var(--switch-bg) no-repeat center;
+
+    animation: slide-out 0.4s;
 }
 
 .light #switch button {
-    right: 0;
-    left: initial;
-    transform: translateY(-50%);
+    animation: slide-in 0.4s forwards;
 }
 
 #switch span {
@@ -121,6 +121,10 @@ img {
     
     border: 2px solid var(--stroke-color);
     border-radius: 9999px;
+}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
 }
 
 /* Main links */
@@ -216,5 +220,26 @@ footer a {
 
     .light {
         --bg-url: url(light-desktop-bg.jpg)
+    }
+}
+
+/* Animation */
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
     }
 }
