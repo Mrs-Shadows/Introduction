@@ -28,4 +28,4 @@ This project was developed with the following technologies:
 
 DevLinks is a LinkTree.
 
-- [Access the finished project online]
+- <a href="https://mrs-shadows.github.io/Introduction/">Access the finished project online</a>
